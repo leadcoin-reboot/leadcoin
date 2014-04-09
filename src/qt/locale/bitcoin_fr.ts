@@ -248,8 +248,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Attention : Si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ ACCÈS À TOUS VOS LITECOINS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LEADCOINS&lt;/b&gt;!</source>
+        <translation>Attention : Si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ ACCÈS À TOUS VOS LEADCOINS&lt;/b&gt; !</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1407,8 +1407,8 @@ Adresse : %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>L&apos;adresse à laquelle le paiement sera envoyé (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</source>
+        <translation>L&apos;adresse à laquelle le paiement sera envoyé (par ex. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1448,8 +1448,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Leadcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Entrez une adresse Leadcoin (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Leadcoin address (e.g. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</source>
+        <translation>Entrez une adresse Leadcoin (par ex. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</translation>
     </message>
 </context>
 <context>
@@ -1471,8 +1471,8 @@ Adresse : %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>L&apos;adresse avec laquelle le message sera signé (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</source>
+        <translation>L&apos;adresse avec laquelle le message sera signé (par ex. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1544,8 +1544,8 @@ Adresse : %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>L&apos;adresse avec laquelle le message a été signé (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</source>
+        <translation>L&apos;adresse avec laquelle le message a été signé (par ex. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1565,8 +1565,8 @@ Adresse : %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Leadcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Entrez une adresse Leadcoin (par ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Leadcoin address (e.g. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</source>
+        <translation>Entrez une adresse Leadcoin (par ex. LPZ27iueMozJ4xmNETK8nsamMadg1LbeTC)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2308,7 +2308,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Leadcoin Alert&quot; admin@foo.com
 </source>
-        <translation>%s, vous devez définir un mot de passe rpc dans le fichier de configuration : 
+        <translation>%s, vous devez définir un mot de passe rpc dans le fichier de configuration :
 %s
 Il vous est conseillé d&apos;utiliser le mot de passe aléatoire suivant :
 rpcuser=leadcoinrpc

@@ -50,7 +50,7 @@ script: |
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
-  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING leadcoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=litecoin" USE_SSE2=1
+  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING leadcoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=leadcoin" USE_SSE2=1
   $HOST-strip leadcoind.exe
   mkdir $OUTDIR/daemon
   cp leadcoind.exe $OUTDIR/daemon
