@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     QApplication::setOrganizationName("Leadcoin");
-    QApplication::setOrganizationDomain("leadcoin.org");
+    QApplication::setOrganizationDomain("leadcoin.net");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
         QApplication::setApplicationName("Leadcoin-Qt-testnet");
     else
@@ -254,11 +254,16 @@ int main(int argc, char *argv[])
                     splash.finish(&window);
 
                 ClientModel clientModel(&optionsModel);
-                WalletModel walletModel(pwalletMain, &optionsModel);
+                WalletModel *walletModel = 0;
+                if(pwalletMain)
+                    walletModel = new WalletModel(pwalletMain, &optionsModel);
 
                 window.setClientModel(&clientModel);
-                window.addWallet("~Default", &walletModel);
-                window.setCurrentWallet("~Default");
+                if(walletModel)
+                {
+                    window.addWallet("~Default", walletModel);
+                    window.setCurrentWallet("~Default");
+                }
 
                 // If -min option passed, start window minimized.
                 if(GetBoolArg("-min"))
@@ -281,6 +286,7 @@ int main(int argc, char *argv[])
                 window.setClientModel(0);
                 window.removeAllWallets();
                 guiref = 0;
+                delete walletModel;
             }
             // Shutdown the core and its threads, but don't exit Bitcoin-Qt here
             threadGroup.interrupt_all();

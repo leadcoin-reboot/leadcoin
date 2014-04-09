@@ -25,7 +25,7 @@ Release Process
 ##perform gitian builds
 
  From a directory containing the leadcoin source, gitian-builder and gitian.sigs
-  
+
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=0.8.0
 	cd ./gitian-builder
@@ -50,7 +50,7 @@ Release Process
 	mv build/out/leadcoin-deps-0.0.5.zip inputs/
 
  Build leadcoind and leadcoin-qt on Linux32, Linux64, and Win32:
-  
+
 	./bin/gbuild --commit leadcoin=v${VERSION} ../leadcoin/contrib/gitian-descriptors/gitian.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../leadcoin/contrib/gitian-descriptors/gitian.yml
 	pushd build/out
@@ -107,7 +107,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update leadcoin.org version
+* update leadcoin.net version
   make sure all OS download links go to the right versions
 
 * update forum version
@@ -158,4 +158,4 @@ From a directory containing leadcoin source, gitian.sigs and gitian zips
 	popd
 
 - Upload gitian zips to SourceForge
-- Celebrate 
+- Celebrate

@@ -5,9 +5,9 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.5.1
+!define VERSION 0.8.6.2
 !define COMPANY "Leadcoin project"
-!define URL http://www.leadcoin.org/
+!define URL http://www.leadcoin.net/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"
@@ -45,7 +45,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile leadcoin-0.8.5.1-win32-setup.exe
+OutFile leadcoin-0.8.6.2-win32-setup.exe
 InstallDir $PROGRAMFILES\Leadcoin
 CRCCheck on
 XPStyle on

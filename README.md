@@ -1,10 +1,10 @@
 Leadcoin integration/staging tree
 ================================
 
-http://www.leadcoin.org
+http://www.leadcoin.net
 
 Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2013      Leadcoin Developers
+Copyright (c) 2013-2014 Leadcoin Developers
 
 What is Leadcoin?
 ----------------
@@ -17,7 +17,7 @@ Leadcoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
 
 
 For more information, as well as an immediately useable, binary version of
-the Leadcoin client sofware, see http://www.leadcoin.org.
+the Leadcoin client sofware, see http://www.leadcoin.net.
 
 License
 -------
