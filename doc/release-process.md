@@ -14,7 +14,7 @@ Release Process
 
 ###tag version in git
 
-	git tag -a v0.8.0
+	git tag -a v0.8.6.2
 
 ###write release notes. git shortlog helps a lot, for example:
 
@@ -27,7 +27,7 @@ Release Process
  From a directory containing the leadcoin source, gitian-builder and gitian.sigs
 
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
-	export VERSION=0.8.0
+	export VERSION=0.8.6.2
 	cd ./gitian-builder
 
  Fetch and build inputs: (first time, or when dependency versions change)
