@@ -1,7 +1,7 @@
 ---
 name: "leadcoin"
 suites:
-- "lucid"
+- "precise"
 architectures:
 - "i386"
 - "amd64"
@@ -18,7 +18,7 @@ packages:
 - "unzip"
 - "pkg-config"
 - "libpng12-dev"
-reference_datetime: "2011-01-30 00:00:00"
+reference_datetime: "2014-04-10 00:00:00"
 remotes:
 - "url": "https://github.com/leadcoin-reboot/leadcoin.git"
   "dir": "leadcoin"

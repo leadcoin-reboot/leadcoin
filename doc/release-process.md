@@ -34,20 +34,22 @@ Release Process
 
 	mkdir -p inputs; cd inputs/
 	wget 'http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.6.tar.gz' -O miniupnpc-1.6.tar.gz
-	wget 'http://www.openssl.org/source/openssl-1.0.1c.tar.gz'
+	wget 'http://www.openssl.org/source/openssl-1.0.1g.tar.gz'
 	wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
-	wget 'http://zlib.net/zlib-1.2.6.tar.gz'
-	wget 'ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng-1.5.9.tar.gz'
+	wget 'http://zlib.net/zlib-1.2.8.tar.gz'
+	wget 'http://download.sourceforge.net/libpng/libpng-1.6.10.tar.gz'
 	wget 'http://fukuchi.org/works/qrencode/qrencode-3.2.0.tar.bz2'
-	wget 'http://downloads.sourceforge.net/project/boost/boost/1.50.0/boost_1_50_0.tar.bz2'
-	wget 'http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.3.tar.gz'
+	wget 'http://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
+	wget 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch'
+	mv boost-mingw.patch boost-mingw-gas-cross-compile-2013-03-03.patch
+	wget 'http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz'
 	cd ..
 	./bin/gbuild ../leadcoin/contrib/gitian-descriptors/boost-win32.yml
-	mv build/out/boost-win32-1.50.0-gitian2.zip inputs/
-	./bin/gbuild ../leadcoin/contrib/gitian-descriptors/qt-win32.yml
-	mv build/out/qt-win32-4.8.3-gitian-r1.zip inputs/
+	mv build/out/boost-win32-1.55.0-gitian2.zip inputs/
 	./bin/gbuild ../leadcoin/contrib/gitian-descriptors/deps-win32.yml
 	mv build/out/leadcoin-deps-0.0.5.zip inputs/
+	./bin/gbuild ../leadcoin/contrib/gitian-descriptors/qt-win32.yml
+	mv build/out/qt-win32-4.8.5-gitian-r4.zip inputs/
 
  Build leadcoind and leadcoin-qt on Linux32, Linux64, and Win32:
 
