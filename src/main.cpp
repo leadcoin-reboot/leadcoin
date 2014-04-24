@@ -3293,13 +3293,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             SeenLocal(addrMe);
         }
 
-        if (pfrom->strSubVer.empty() || pfrom->strSubVer.find("/Leadoshi:") == string::npos)
-        {
-            printf("partner %s using wrong subver %s; disconnecting\n", pfrom->addr.ToString().c_str(), pfrom->strSubVer.c_str());
-            pfrom->fDisconnect = true;
-            return true;
-        }
-
         // Disconnect if we connected to ourself
         if (nNonce == nLocalHostNonce && nNonce > 1)
         {
