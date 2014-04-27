@@ -3,17 +3,19 @@ Leadcoin integration/staging tree
 
 http://www.leadcoin.net
 
-Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2013-2014 Leadcoin Developers
+
+Copyright (c) 2009-2013 Bitcoin Developers
+
 
 What is Leadcoin?
 ----------------
 Leadcoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 0.5 minute block targets
- - Subsidy is cut in half every 1 months.
- - ~1000 million total coins
- - 3840 coins per block
- - everyday to retarget difficulty
+ - Around 1,000,000,000 coins will be mined
+ - Block reward: 3840 coins initially, halving every 86400 blocks
+ - Block target: 30 seconds
+ - Difficulty retargets every block (DigiShield)
+ - No Premine
 
 
 For more information, as well as an immediately useable, binary version of
@@ -34,17 +36,13 @@ their feature or bug fix is ready.
 If it is a simple/trivial/non-controversial change, then one of the Leadcoin
 development team members simply pulls it.
 
-If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion (if they haven't already) on the
-[mailing list](http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development).
-
 The patch will be accepted if there is broad consensus that it is a good thing.
 Developers should expect to rework and resubmit patches if the code doesn't
 match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
+completely stable. [Tags](https://github.com/leadcoin-reboot/leadcoin/tags) are created
 regularly to indicate new official, stable release versions of Leadcoin.
 
 Testing
