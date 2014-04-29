@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.0.0.2
+!define VERSION 1.0.0.3
 !define COMPANY "Leadcoin project"
 !define URL http://www.leadcoin.net/
 
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile leadcoin-1.0.0.2-win32-setup.exe
+OutFile leadcoin-1.0.0.3-win32-setup.exe
 InstallDir $PROGRAMFILES\Leadcoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 1.0.0.2
+VIProductVersion 1.0.0.3
 VIAddVersionKey ProductName Leadcoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
