@@ -1188,7 +1188,6 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     {
        // amplitude filter - thanks to daft27 for this code
         nActualTimespan = retargetTimespan + (nActualTimespan - retargetTimespan)/8;
-        printf("DIGISHIELD RETARGET\n");
         if (nActualTimespan < (retargetTimespan - (retargetTimespan/4)) ) nActualTimespan = (retargetTimespan - (retargetTimespan/4));
         if (nActualTimespan > (retargetTimespan + (retargetTimespan/2)) ) nActualTimespan = (retargetTimespan + (retargetTimespan/2));
     }
