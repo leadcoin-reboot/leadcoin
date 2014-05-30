@@ -1,7 +1,7 @@
 # Site settings
 title: "Leadcoin"
 description: "Leadcoin Official Site"
-baseurl: ""
+baseurl: "leadcoin"
 url: "http://leadcoin.net"
 
 # Build settings
