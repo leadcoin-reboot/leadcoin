@@ -10,7 +10,7 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        {% assign sorted_pages = site.pages | sort:"weight" %}
+        {% assign sorted_pages = site.pages | sort:"name" %}
         {% for p in sorted_pages %}
           <li {% if p.url == page.url %}class="active"{% endif %}><a href="{{p.url | prepend: site.baseurl}}">{{p.title}}</a></li>
         {% endfor %}
