@@ -6,13 +6,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><b>{{site.title}}</b></a>
+      <a class="navbar-brand" href="{{"/" | prepend: site.baseurl}}"><b>{{site.title}}</b></a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         {% assign sorted_pages = site.pages | sort:"weight" %}
         {% for p in sorted_pages %}
-          <li {% if p.url == page.url %}class="active"{% endif %}><a href="{{p.url}}">{{p.title}}</a></li>
+          <li {% if p.url == page.url %}class="active"{% endif %}><a href="{{p.url | prepend: site.baseurl}}">{{p.title}}</a></li>
         {% endfor %}
         <li><a href="http://explorer.leadcoin.net" target="_blank">Block Explorer</a></li>
       </ul>
