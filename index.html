@@ -1,20 +1,35 @@
 ---
 layout: default
+title: Home
+weight: 1
 ---
 
 <div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div id="specification" class="jumbotron">
+    <h1>Leadcoin</h1>
+    <p>Digital peer-to-peer cryptocurrency with fast transactions
+    </p>
+    <h2>Specification:</h2>
+    <ul>
+      <li>Around 1,000,000,000 coins will be mined</li>
+      <li>Block reward: 3840 coins initially, halving every 86400 blocks</li>
+      <li>Block target: 30 seconds</li>
+      <li>Difficulty retargets every block (DigiShield)</li>
+    </ul>
+  </div>
+  <div id="wallet"></div>
+  <div id="exchanges"></div>
+  <div id="Contacts">
+    <h1>Contacts:</h1>
+    <h2>Follow us on social media</h2>
+    <ul>
+      <li>Twitter</li>
+      <li>Facebook</li>
+    </ul>
+    <h2>Discuss on forums</h2>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </div>
